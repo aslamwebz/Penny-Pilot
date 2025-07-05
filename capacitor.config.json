@@ -1,0 +1,10 @@
+
+{
+  "appId": "com.pennypilot.app",
+  "appName": "PennyPilot",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "cleartext": true
+  }
+}
