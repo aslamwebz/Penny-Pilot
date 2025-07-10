@@ -26,7 +26,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="text-xs text-center mt-8 text-slate-400">© {new Date().getFullYear()} PennyPilot. All rights reserved.</div>
+    <div className="text-xs text-center mt-8 text-slate-400">Em@Webzone 2025</div>
   </footer>
 );
 
