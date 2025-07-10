@@ -1,24 +1,23 @@
 # Pilot Your Finances
 
-## Project Setup
+##Run Locally
 
-```
+###Clone the project
 
-Follow these steps:
+(https://github.com/aslamwebz/Penny-Pilot.git)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+###Go to the project directory
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd shadcn-admin
 
-# Step 3: Install the necessary dependencies.
-npm i
+###Install dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
+
+###Start the server
+
 npm run dev
-```
+  
 ## What technologies are used for this project?
 
 This project is built with:
