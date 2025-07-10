@@ -4,20 +4,28 @@
 
 ### Clone the project
 
+```bash
 git clone https://github.com/aslamwebz/Penny-Pilot.git
+```
 
 ### Go to the project directory
 
-cd shadcn-admin
+```bash
+cd Penny-Pilot
+```
 
 ### Install dependencies
 
+```bash
 npm install
+```
 
 ### Start the server
 
+```bash
 npm run dev
-  
+```
+
 ## What technologies are used for this project?
 
 This project is built with:
