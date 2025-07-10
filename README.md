@@ -4,7 +4,7 @@
 
 ###Clone the project
 
-(https://github.com/aslamwebz/Penny-Pilot.git)
+git clone https://github.com/aslamwebz/Penny-Pilot.git
 
 ###Go to the project directory
 
