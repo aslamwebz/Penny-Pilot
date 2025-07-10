@@ -1,20 +1,20 @@
 # Pilot Your Finances
 
-##Run Locally
+## Run Locally
 
-###Clone the project
+### Clone the project
 
 git clone https://github.com/aslamwebz/Penny-Pilot.git
 
-###Go to the project directory
+### Go to the project directory
 
 cd shadcn-admin
 
-###Install dependencies
+### Install dependencies
 
 npm install
 
-###Start the server
+### Start the server
 
 npm run dev
   
