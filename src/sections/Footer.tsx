@@ -6,8 +6,8 @@ const Footer = () => (
         <div className="font-extrabold text-lg text-mint-700 mb-2">PennyPilot</div>
         <div className="text-slate-500 mb-2">Helping you master your money — one day at a time.</div>
         <div className="flex gap-2 mt-3">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-8" />
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" className="h-8" />
+          <img src="img/google-play.png" alt="Google Play" className="h-8" />
+          <img src="img/appstore.png" alt="App Store" className="h-8" />
         </div>
       </div>
       <div className="flex-1 mb-4">

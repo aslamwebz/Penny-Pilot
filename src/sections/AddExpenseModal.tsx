@@ -65,7 +65,7 @@ const AddExpenseModal: React.FC<AddExpenseModalProps> = ({ open, onClose, onSave
 
   return (
     <Dialog open={open} onOpenChange={(val) => !val && onClose()}>
-      <DialogContent>
+      <DialogContent className="bg-white">
         <DialogHeader>
           <DialogTitle>{isEditing ? 'Edit Expense' : 'Add Expense'}</DialogTitle>
         </DialogHeader>
