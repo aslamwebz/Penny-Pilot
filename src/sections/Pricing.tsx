@@ -1,30 +1,88 @@
 
 const Pricing = () => (
-  <div className="max-w-2xl mx-auto text-center rounded-xl border bg-white/90 p-10 shadow-xl animate-fade-in">
-    <h2 className="text-3xl font-bold text-slate-800 mb-3">Simple, Honest Pricing</h2>
-    <p className="text-slate-600 text-lg mb-7">Get started for free. Upgrade for more features when ready.</p>
-    <div className="flex flex-col md:flex-row md:justify-center items-center gap-8">
-      <div className="flex-1 flex flex-col items-center bg-mint-50 border border-mint-200 rounded-lg p-8 mb-4 md:mb-0">
-        <div className="font-semibold text-2xl text-mint-700 mb-2">Free</div>
-        <div className="text-3xl font-bold mb-3">$0<span className="text-base font-medium text-slate-400">/mo</span></div>
-        <ul className="text-slate-600 mb-5">
-          <li>Up to 50 transactions/mo</li>
-          <li>All core features</li>
-          <li>Budget & trend charts</li>
-        </ul>
-        <button className="bg-mint-500 text-white font-bold px-5 py-2 rounded-full hover:bg-mint-600 transition-all">Get Started</button>
+  <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-3">Simple, Honest Pricing</h2>
+      <p className="text-slate-600 text-lg md:text-xl">
+        Get started for free. Upgrade for more features when ready.
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      {/* Free Plan */}
+      <div className="flex flex-col h-full bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+        <div className="flex-1">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-2xl font-bold text-slate-800">Free</h3>
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-mint-100 text-mint-800">
+              No credit card needed
+            </span>
+          </div>
+          
+          <div className="mb-6">
+            <div className="flex items-baseline">
+              <span className="text-4xl font-extrabold text-slate-900">$0</span>
+              <span className="ml-2 text-slate-500">/month</span>
+            </div>
+            <p className="mt-1 text-sm text-slate-500">Perfect for getting started</p>
+          </div>
+          
+          <ul className="space-y-3 mb-8">
+            {["Up to 50 transactions/month", "All core features", "Budget & trend charts", "Basic support"].map((feature) => (
+              <li key={feature} className="flex items-center">
+                <svg className="h-5 w-5 text-mint-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-slate-600">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        <button className="w-full bg-mint-500 hover:bg-mint-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200">
+          Get Started for Free
+        </button>
       </div>
-      <div className="flex-1 flex flex-col items-center bg-blue-50 border border-blue-200 rounded-lg p-8 shadow-sm">
-        <div className="font-semibold text-2xl text-blue-700 mb-2">Pro</div>
-        <div className="text-3xl font-bold mb-3">$6<span className="text-base font-medium text-slate-400">/mo</span></div>
-        <ul className="text-slate-600 mb-5">
-          <li>Unlimited transactions</li>
-          <li>Recurring payments</li>
-          <li>Priority support</li>
-          <li>Export to CSV</li>
-        </ul>
-        <button className="bg-blue-500 text-white font-bold px-5 py-2 rounded-full hover:bg-blue-600 transition-all">Start 14-day Trial</button>
+      
+      {/* Pro Plan */}
+      <div className="relative flex flex-col h-full bg-white border-2 border-blue-500 rounded-2xl p-6 sm:p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+        <div className="absolute top-0 right-0 -mt-3 -mr-3">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-800">
+            Most Popular
+          </span>
+        </div>
+        
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold text-slate-800 mb-4">Pro</h3>
+          
+          <div className="mb-6">
+            <div className="flex items-baseline">
+              <span className="text-4xl font-extrabold text-slate-900">$6</span>
+              <span className="ml-2 text-slate-500">/month</span>
+            </div>
+            <p className="mt-1 text-sm text-slate-500">Billed annually ($72/year) or $8 month-to-month</p>
+          </div>
+          
+          <ul className="space-y-3 mb-8">
+            {["Unlimited transactions", "Recurring payments", "Priority support", "Export to CSV", "Advanced analytics", "Custom categories"].map((feature) => (
+              <li key={feature} className="flex items-center">
+                <svg className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-slate-600">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200">
+          Start 14-Day Free Trial
+        </button>
       </div>
+    </div>
+    
+    <div className="mt-10 text-center text-slate-500 text-sm">
+      <p>Need more? <a href="#" className="text-blue-600 hover:underline font-medium">Contact us</a> for enterprise solutions.</p>
     </div>
   </div>
 );

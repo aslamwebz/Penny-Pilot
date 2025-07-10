@@ -34,7 +34,7 @@ const Index = () => {
   return (
     <div className="bg-gradient-to-br from-blue-50 via-mint-50 to-white min-h-screen font-inter">
       {/* Navbar */}
-      <header className="flex justify-between items-center py-6 px-4 md:px-12 border-b bg-white/90 backdrop-blur-md shadow-sm" role="banner">
+      <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 md:py-6 md:px-12 border-b bg-white shadow-sm" role="banner">
         <div className="flex items-center gap-2">
           <span className="bg-mint-500 text-white font-bold rounded-lg px-3 py-1 text-lg tracking-tight shadow-sm">PennyPilot</span>
         </div>
@@ -71,8 +71,11 @@ const Index = () => {
         <MobileNav />
       </header>
 
+      {/* Add padding top to account for fixed header */}
+      <div className="h-20 md:h-24"></div>
+      
       {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row items-center gap-12 px-6 md:px-12 py-16 max-w-7xl mx-auto">
+      <section className="flex flex-col-reverse md:flex-row items-center gap-12 px-6 md:px-12 py-8 md:py-16 max-w-7xl mx-auto">
         <div className="md:w-1/2 flex flex-col gap-5">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-800 leading-tight mb-2">
             Take Control of Your <span className="text-mint-600">Spending</span>
